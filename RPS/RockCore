@@ -1,0 +1,34 @@
+let HAND_PROGRAMME = 0
+input.onGesture(Gesture.Shake, function () {
+    HAND_PROGRAMME = randint(1, 3)
+    if (HAND_PROGRAMME == 1) {
+        basic.showLeds(`
+            . . . . #
+            . # # # .
+            . # # # .
+            . # # # .
+            # . . . .
+            `)
+    } else if (HAND_PROGRAMME == 2) {
+        basic.showLeds(`
+            . . . . .
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            `)
+    } else if (HAND_PROGRAMME == 3) {
+        basic.showLeds(`
+            # # . # #
+            # # . # #
+            . . # . .
+            . # . # .
+            # . . . #
+            `)
+    } else {
+    	
+    }
+})
+basic.forever(function () {
+	
+})
